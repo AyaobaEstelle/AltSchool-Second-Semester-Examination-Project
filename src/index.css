@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap');
+
+
+:root{
+  --cl-accent-500: #151932;
+  --clr-accent-400: #1E2140;
+
+  --clr-primary-600: #fc6e69;
+  --clr-primary-700:  #dc143c;
+
+  --clr-neutral-100: #c9ccea;
+  --clr-black: #000000;
+
+  --ff-primary: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace; 
+  --ff-secondary: 'Lora', serif;
+  --ff-regular: 'Playfair Display', serif;
+
+  --fs-50: 1.5px;
+  --fs-100: .5rem
+  --fs-200: .7rem
+  --fs-300: 1rem;
+  --fs-400: 1.3rem;
+  --fs-500: 2rem;
+  --fs-600: 2.5rem;
+  --fs-700: 3rem;
+  --fs-800: 9.5rem;
+  --fs-900: 13rem;
+  
+  --fw-regular: 300;
+  --fw-bold: 700;
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background: radial-gradient(circle, var(--clr-accent-400) 0%, var(--cl-accent-500) 65%);
+}
+
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+
+.App {
+  height: 100vh;
+  overflow: hidden;
+  width: 100vw;
+
+}
+
+
+/* NAVIGATION LINKS */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav a {
+  margin: var(--fs-500);
+  font-size: var(--fs-400);
+  font-weight: var(--fw-regular);
+  text-decoration:none;
+  text-transform: capitalize;
+
+}
+.counter-logo {
+  font-family: var(--ff-regular);
+  color: var(--clr-primary-600);
+  font-size: var(--fs-500);
+  text-transform: uppercase;
+}
+.nav-link {
+  color: var(--clr-neutral-100);
+  font-family: var(--ff-secondary);
+
+}
+
+.nav-link:hover {
+  cursor: pointer;
+  color: var(--clr-primary-600);
+}
+
+.nav-link.active {
+   color: var(--clr-primary-600);
+   background-color: var(--clr-neutral-100);
+   padding: 5px 15px;
+   border: 1px solid var(--clr-neutral-100);
+   border-radius: 30px;
+}
+
+
+/* COUNTER PAGE*/
+.counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--ff-secondary);
+  padding-block: var(--fs-800);
+}
+
+.counter input {
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-300);
+  padding: 15px 20px;
+  outline: none;
+  border-radius: 12px;
+  border: 1px solid var(--clr-neutral-100);
+  background-color: var(--clr-neutral-100); 
+}
+.counter form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.counter h2 {
+  margin-top: var(--fs-100); 
+}
+
+.counter .btn-set-value {
+  border-radius: 12px;
+}
+.counter .btn-set-value:hover {
+  background-color: var(--clr-primary-700);
+  border: 1px solid  var(--clr-primary-700);
+}
+
+/* BUTTONS*/
+button {
+  margin: 15px;
+  width:150px;
+  height:42px;
+  border-radius: 30px;
+  border: 1px solid var(--clr-neutral-100);
+  background-color: var(--clr-neutral-100);
+  color: var(--clr-primary-600);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--clr-accent-400);
+  color: var(--clr-neutral-100);
+  border: 1px solid var(--clr-primary-600);
+}
+.btn-red:hover {
+  color: var(--clr-neutral-100);
+  background-color: var(--clr-primary-700);
+  border: 1px solid var(--clr-primary-700);
+}
+
+
+/* TEST ERROR BOUNDARY */
+.test-error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: 19.5rem;
+}
+.test-error button:hover {
+  background-color: var(--clr-primary-700);
+  border: 1px solid var(--clr-primary-700);;
+}
+
+
+
+.error {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle, var(--cl-accent-500) 0%, var(--clr-primary-700) 65%); 
+}
+.error h1 {
+  margin-bottom: var(--fs-300);
+}
+.error details {
+  white-space: pre-wrap;
+  width: 80%;
+  height: 30vh;
+  overflow: scroll;
+  background-color: var(--clr-black);
+}
+
+
+/* ABOUT PAGE */
+.about{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-block: 15rem;
+  font-family: var(--ff-primary);
+}
+
+.about h1 {
+  margin-bottom: var(--fs-500);
+  text-transform: uppercase;
+}
+
+
+/* 404 ERROR */
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--clr-neutral-100);
+  padding-block: 7rem;
+}
+.not-found h2 {
+  text-transform: uppercase;
+}
+
+
+/* UTILITY CLASSES */
+.ff-primary {
+  font-family: var(--ff-primary);
+}
+.ff-secondary {
+  font-family: var(--ff-secondary);
+}
+.ff-regular {
+  font-family: var(--ff-regular);
+}
+.clr-accent-500 {
+  color: var(--cl-accent-500);
+}
+.clr-accent-400 {
+  color: var(--blue-400);
+}
+.clr-primary-600 {
+  color: var(--clr-primary-600);
+}
+.clr-primary-700 {
+  color: var(--clr-primary-700);
+}
+.clr-neutral-100 {
+  color: var(--clr-neutral-100);
+}
+.clr-black {
+  color: var(--clr-black);
+}
+.fw-regular{
+  font-weight: var(--fw-regular);
+}
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+.fs-100 {
+  font-size: var(--fs-100);
+}
+.fs-200 {
+  font-size: var(--fs-200);
+}
+.fs-300 {
+  font-size: var(--fs-300);
+}
+.fs-400 {
+  font-size: var(--fs-400);
+}
+.fs-500 {
+  font-size: var(--fs-500);
+}
+.fs-600 {
+  font-size: var(--fs-600);
+}
+.fs-700 {
+  font-size: var(--fs-700);
+}
+.fs-800 {
+  font-size: var(fs-800);
+}
+.fs-900 {
+  font-size: var(--fs-900);
+}
+.fs-50 {
+  font-size: var(--fs-50);
+}
+.text-align-center {
+  text-align: center;
+}
+
+
+
+@media screen and (max-width: 37.5rem) {
+  nav a {
+    margin: .3rem;
+  }
+  .counter-logo {
+    font-size: var(--fs-300);
+  }
+   .nav-link {
+    font-size: var(--fs-200);
+   }
+  .nav-link.active {
+     padding: 6px 10px;
+  }
+   .error h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   .error details {
+    height: 60vh;
+   }
+   .about {
+    padding-block: 4.5rem;
+   }
+   .about h3,
+   p,
+   .not-found {
+    text-align: center;
+    padding-left: .8rem;
+   }
+   .about ul li {
+    text-align: center;
+    padding: 1rem;
+   }
+   .not-found {
+    padding-block: 1.8rem;
+   }
+}
