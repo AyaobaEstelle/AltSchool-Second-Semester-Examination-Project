@@ -109,6 +109,9 @@ nav a {
 .nav-link {
   color: var(--clr-neutral-100);
   font-family: var(--ff-secondary);
+  padding: 5px 15px;
+  border: 1px solid transparent;
+  border-radius: 30px;
 
 }
 
@@ -120,9 +123,7 @@ nav a {
 .nav-link.active {
    color: var(--clr-primary-600);
    background-color: var(--clr-neutral-100);
-   padding: 5px 15px;
-   border: 1px solid var(--clr-neutral-100);
-   border-radius: 30px;
+   border-color: var(--clr-neutral-100);
 }
 
 
@@ -322,18 +323,23 @@ button:hover {
 
 
 @media screen and (max-width: 37.5rem) {
+  nav {
+    flex-wrap: wrap;
+    padding-inline: 0.5em;
+    padding-top: 1em;
+  }
   nav a {
     margin: .3rem;
   }
   .counter-logo {
     font-size: var(--fs-300);
+    flex-basis: 100%;
+    text-align: center;
   }
    .nav-link {
     font-size: var(--fs-200);
+    padding: 6px 10px;
    }
-  .nav-link.active {
-     padding: 6px 10px;
-  }
    .error h2 {
     display: flex;
     flex-direction: column;

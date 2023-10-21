@@ -12,6 +12,7 @@ import { NavLink } from "react-router-dom";
         <li>DECREMENT: click the 'Decrement' button <span>to decrease the count by 1</span></li>
         <li>RESET: click the 'Reset' button <span>to reset count to 0</span></li>
       </ul>
+      <p><a className="clr-neutral-100" href="https://github.com/AyaobaEstelle/AltSchool-Second-Semester-Examination-Project">GitHub Repository URL</a></p>
     </div>
   );
 }
