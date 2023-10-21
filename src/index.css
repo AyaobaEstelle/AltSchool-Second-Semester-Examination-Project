@@ -229,13 +229,16 @@ button:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-block: 10rem;
-  font-family: var(--ff-primary);
+  padding-block: 8rem;
+  font-family: var(--ff-secondary);
 }
 
 .about h1 {
   margin-bottom: var(--fs-400);
   text-transform: uppercase;
+}
+.about ul li {
+  margin: 0.8rem;
 }
 .about a {
   color: var(--clr-neutral-100);
