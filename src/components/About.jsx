@@ -15,7 +15,7 @@ import { NavLink } from "react-router-dom";
         <li>Reset: click the 'Reset' button <span>to reset count to 0.</span></li>
       </ul>
       <small>Note: The counter will not 'Set Value' <span>for Alphabets only NUMBERS</span></small>
-      <p><a href="https://github.com/AyaobaEstelle/AltSchool-Second-Semester-Examination-Project">GitHub Repository URL</a></p>
+      <p><a className="clr-neutral-100" href="https://github.com/AyaobaEstelle/AltSchool-Second-Semester-Examination-Project">GitHub Repository URL</a></p>
     </div>
   );
 }

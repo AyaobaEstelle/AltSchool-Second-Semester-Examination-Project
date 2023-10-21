@@ -240,7 +240,7 @@ button:hover {
 .about ul li {
   margin: 0.8rem;
 }
-.about a {
+.about h3 a {
   color: var(--clr-neutral-100);
   text-decoration: none;
 }
@@ -253,7 +253,7 @@ button:hover {
   align-items: center;
   justify-content: center;
   color: var(--clr-neutral-100);
-  padding-block: 6rem;
+  padding-block: 4rem;
   font-family: var(--ff-secondary);
 }
 .not-found h1 {
@@ -389,7 +389,7 @@ button:hover {
     padding-block: 0.7rem;
    }
    .not-found {
-    padding-block: 1rem;
+    padding-block: 0.8rem;
     text-align: center;
    }
    .not-found h2,
