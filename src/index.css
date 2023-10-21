@@ -229,7 +229,7 @@ button:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-block: 12rem;
+  padding-block: 10rem;
   font-family: var(--ff-primary);
 }
 
@@ -368,7 +368,7 @@ button:hover {
     height: 60vh;
    }
    .about {
-    padding-block: 1.5rem;
+    padding-block: 1rem;
    }
    .about h3 {
     text-align: center;
