@@ -134,7 +134,7 @@ nav a {
   align-items: center;
   justify-content: center;
   font-family: var(--ff-secondary);
-  padding-block: var(--fs-800);
+  padding: 8rem;
 }
 
 .counter input {
@@ -184,7 +184,7 @@ button:hover {
 .btn-red:hover {
   color: var(--clr-neutral-100);
   background-color: var(--clr-primary-700);
-  border: 1px solid var(--clr-primary-700);
+  border-color: var(--clr-primary-700);
 }
 
 
@@ -193,17 +193,18 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-block: 19.5rem;
+  padding-block: 19rem;
 }
 .test-error button:hover {
   background-color: var(--clr-primary-700);
-  border: 1px solid var(--clr-primary-700);;
+  border-color: var(--clr-primary-700);;
 }
 
 
 
 .error {
   min-height: 100vh;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -228,13 +229,17 @@ button:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-block: 15rem;
+  padding-block: 12rem;
   font-family: var(--ff-primary);
 }
 
 .about h1 {
-  margin-bottom: var(--fs-500);
+  margin-bottom: var(--fs-400);
   text-transform: uppercase;
+}
+.about a {
+  color: var(--clr-neutral-100);
+  text-decoration: none;
 }
 
 
@@ -245,7 +250,11 @@ button:hover {
   align-items: center;
   justify-content: center;
   color: var(--clr-neutral-100);
-  padding-block: 7rem;
+  padding-block: 6rem;
+  font-family: var(--ff-secondary);
+}
+.not-found h1 {
+  font-size: 12rem;
 }
 .not-found h2 {
   text-transform: uppercase;
@@ -331,6 +340,9 @@ button:hover {
   nav a {
     margin: .3rem;
   }
+  .counter {
+    padding: 6rem;
+  }
   .counter-logo {
     font-size: var(--fs-300);
     flex-basis: 100%;
@@ -339,6 +351,12 @@ button:hover {
    .nav-link {
     font-size: var(--fs-200);
     padding: 6px 10px;
+   }
+   .test-error {
+    padding-block: 16rem;
+   }
+   .error {
+    padding: .5rem;
    }
    .error h2 {
     display: flex;
@@ -350,19 +368,29 @@ button:hover {
     height: 60vh;
    }
    .about {
-    padding-block: 4.5rem;
+    padding-block: 1.5rem;
    }
-   .about h3,
-   p,
-   .not-found {
+   .about h3 {
     text-align: center;
-    padding-left: .8rem;
+   }
+   .about p {
+    text-align: center;
+    padding-bottom: 0.5rem;
    }
    .about ul li {
+    margin: 0.4rem;
+    padding-left: 1rem;
+   }
+   .about small {
     text-align: center;
-    padding: 1rem;
+    padding-block: 0.7rem;
    }
    .not-found {
-    padding-block: 1.8rem;
+    padding-block: 1rem;
+    text-align: center;
+   }
+   .not-found h2,
+   p {
+    padding-inline: 1rem;
    }
 }
