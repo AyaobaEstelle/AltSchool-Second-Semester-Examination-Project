@@ -391,6 +391,6 @@ button:hover {
    }
    .not-found h2,
    p {
-    padding-inline: 1rem;
+    padding-inline: 0.8rem;
    }
 }
