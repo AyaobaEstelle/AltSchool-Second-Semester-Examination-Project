@@ -23,10 +23,10 @@ npm run dev
 ```
 4. To  view the Application.
    
-Open [http://localhost:5174/](http://localhost:5174) in your browser
+Open [http://localhost:5174/](http://localhost:5174) on your browser
 
 
-### This Application have 3 pages 
+### This Application has 3 pages 
 * The counter page which is also the landing page
 * The Test Error Boundary Page
 * The About page which contains information on how to use the Application
